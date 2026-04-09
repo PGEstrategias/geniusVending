@@ -714,6 +714,8 @@ h6 {
   color: var(--text);
   padding: 60px 0 0;
   border-top: 1px solid var(--gray-200);
+  position: relative;
+  z-index: 2;
 }
 
 .footer__motto {
