@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Catálogo de snacks para máquinas expendedoras Genius Vending. Palomitas, malanga, platanitos, cacahuates, gomitas y más.">
+    <title>Catálogo de Snacks | Genius Vending</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟢</text></svg>">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="nav__logo">
+                    <img src="https://static.wixstatic.com/media/c12a9c_6d84f1f31faa43c19051ae1dfa7e83e3~mv2.png/v1/fill/w_240,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PHOTO-2025-03-12-12-48-10-removebg-preview.png"
+                        alt="Genius Vending Logo" class="nav__logo-img">
+                </a>
+                <div class="nav__links" id="navLinks">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                    <a href="apply.html" class="nav__link">¿Quiénes Somos?</a>
+                    <a href="items.html" class="nav__link">Servicios</a>
+                    <a href="apply.html" class="nav__link">Contacto</a>
+                    <div class="nav__dropdown">
+                        <button class="nav__link nav__dropdown-trigger active">Catálogos <svg width="12" height="8"
+                                viewBox="0 0 16 11" fill="none">
+                                <path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L0 1.86193L8 10.5Z"
+                                    fill="currentColor" />
+                            </svg></button>
+                        <div class="nav__dropdown-menu">
+                            <a href="team.html" class="nav__dropdown-item">Catálogo de Maquinas</a>
+                            <a href="snacks.html" class="nav__dropdown-item">Catálogo de Snacks</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav__toggle" aria-label="Menú" id="navToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-banner__title">Catálogo de Snacks</h1>
+            <p class="page-banner__subtitle">Los mejores snacks mexicanos para tu máquina expendedora: variedad, sabor y
+                frescura garantizada.</p>
+            <div class="page-banner__breadcrumb">
+                <a href="../index.html">Inicio</a> / <a href="#">Catálogos</a> / <span>Snacks</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SNACK CATALOG -->
+    <section class="section">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__tag">Productos</span>
+                <h2 class="section__title">Nuestros <span>Snacks</span></h2>
+                <p class="section__subtitle">
+                    Ofrecemos una amplia variedad de productos pensados para satisfacer todos los gustos. Ideales para
+                    máquinas
+                    expendedoras de cualquier tamaño.
+                </p>
+            </div>
+
+            <div class="snack-catalog">
+                <!-- Snack 1 -->
+                <div class="snack-card fade-in" id="snack-palomitas">
+                    <div class="snack-card__image-wrap">
+                        <img src="../images/snacks/palomitas.png" alt="Riki Palomitas - Queso y Chile"
+                            class="snack-card__img" loading="lazy">
+                    </div>
+                    <div class="snack-card__body">
+                        <span class="snack-card__category">Palomitas</span>
+                        <h3 class="snack-card__title">Riki Palomitas</h3>
+                        <p class="snack-card__description">Deliciosas palomitas sabor queso y chile. Crujientes y llenas
+                            de sabor,
+                            perfectas para cualquier momento.</p>
+                        <a href="apply.html" class="snack-card__cta">
+                            Ver Producto
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Snack 2 -->
+                <div class="snack-card fade-in" id="snack-malanga">
+                    <div class="snack-card__image-wrap">
+                        <img src="../images/snacks/malanga.png" alt="Malanga Habanero - Chips picantes"
+                            class="snack-card__img" loading="lazy">
+                    </div>
+                    <div class="snack-card__body">
+                        <span class="snack-card__category">Chips</span>
+                        <h3 class="snack-card__title">Malanga Habanero</h3>
+                        <p class="snack-card__description">Chips de malanga con el picante intenso del habanero.
+                            Crujientes, sin
+                            gluten y con auténtico sabor mexicano.</p>
+                        <a href="apply.html" class="snack-card__cta">
+                            Ver Producto
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Snack 3 -->
+                <div class="snack-card fade-in" id="snack-platanitos">
+                    <div class="snack-card__image-wrap">
+                        <img src="../images/snacks/platanitos.png" alt="Platanitos - Chile y Limón"
+                            class="snack-card__img" loading="lazy">
+                    </div>
+                    <div class="snack-card__body">
+                        <span class="snack-card__category">Chips</span>
+                        <h3 class="snack-card__title">Platanitos</h3>
+                        <p class="snack-card__description">Crujientes chips de plátano con chile y limón. Un snack
+                            natural y
+                            delicioso con receta mexicana tradicional.</p>
+                        <a href="apply.html" class="snack-card__cta">
+                            Ver Producto
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Snack 4 -->
+                <div class="snack-card fade-in" id="snack-cacahuates">
+                    <div class="snack-card__image-wrap">
+                        <img src="../images/snacks/cacahuates.png" alt="Cacahuates Japoneses" class="snack-card__img"
+                            loading="lazy">
+                    </div>
+                    <div class="snack-card__body">
+                        <span class="snack-card__category">Cacahuates</span>
+                        <h3 class="snack-card__title">Cacahuates Japoneses</h3>
+                        <p class="snack-card__description">Los clásicos cacahuates japoneses, crujientes y salados. El
+                            snack
+                            favorito de México, perfecto para vending.</p>
+                        <a href="apply.html" class="snack-card__cta">
+                            Ver Producto
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Snack 5 -->
+                <div class="snack-card fade-in" id="snack-gomitas">
+                    <div class="snack-card__image-wrap">
+                        <img src="../images/snacks/gomitas.png" alt="Gomitas - Sabor original" class="snack-card__img"
+                            loading="lazy">
+                    </div>
+                    <div class="snack-card__body">
+                        <span class="snack-card__category">Dulces</span>
+                        <h3 class="snack-card__title">Gomitas</h3>
+                        <p class="snack-card__description">Coloridas gomitas de ositos con sabor original y divertido.
+                            Hechas en
+                            México, ideales para todos los gustos.</p>
+                        <a href="apply.html" class="snack-card__cta">
+                            Ver Producto
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Snack 6 -->
+                <div class="snack-card fade-in" id="snack-galletas">
+                    <div class="snack-card__image-wrap">
+                        <img src="../images/snacks/galletas.png" alt="Galletas Marías" class="snack-card__img"
+                            loading="lazy">
+                    </div>
+                    <div class="snack-card__body">
+                        <span class="snack-card__category">Galletas</span>
+                        <h3 class="snack-card__title">Galletas Marías</h3>
+                        <p class="snack-card__description">Las tradicionales Galletas Marías, deliciosas y crujientes.
+                            Un clásico
+                            mexicano ideal para acompañar cualquier bebida.</p>
+                        <a href="apply.html" class="snack-card__cta">
+                            Ver Producto
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSPIRATIONAL QUOTE -->
+    <section class="catalog-quote">
+        <div class="container">
+            <p class="catalog-quote__text fade-in">
+                <em>Variedad, sabor y calidad en cada producto: lo mejor de México en tu máquina expendedora...</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-banner__title fade-in">¿Quieres surtir tu máquina?</h2>
+            <p class="cta-banner__subtitle fade-in">Contáctanos para conocer nuestra lista completa de productos y
+                precios
+                mayoreo.</p>
+            <div class="cta-banner__buttons fade-in">
+                <a href="apply.html" class="btn btn--primary">Contáctanos</a>
+                <a href="team.html" class="btn btn--outline">Ver Catálogo de Máquinas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__motto">
+                <p class="footer__motto-text"><em>Donde otros ven un espacio vacío, nosotros <em>vemos una
+                            oportunidad.</em></em>&nbsp;🚀</p>
+            </div>
+            <div class="footer__grid">
+                <div></div>
+                <div class="footer__menu-col">
+                    <h4 class="footer__col-title">MENU</h4>
+                    <a href="../index.html" class="footer__link">Inicio</a>
+                    <a href="apply.html" class="footer__link">¿Quiénes Somos?</a>
+                    <a href="items.html" class="footer__link">Servicios</a>
+                    <a href="apply.html" class="footer__link">Contacto</a>
+                    <a href="team.html" class="footer__link">Catálogo de Máquinas</a>
+                    <a href="snacks.html" class="footer__link">Catálogo de Snacks</a>
+                </div>
+                <div class="footer__contact-col">
+                    <h4 class="footer__col-title">CONTACT</h4>
+                    <a href="mailto:contacto@genuisvendig.mx" class="footer__link">contacto@genuisvendig.mx</a>
+                    <a href="tel:+522223278258" class="footer__link">2223 2782 58</a>
+                    <p class="footer__link">Calle Valentina #5 col Momoxpan, San Pedro Cholula, Puebla.</p>
+                </div>
+            </div>
+            <div class="footer__social-row">
+                <a href="https://www.tiktok.com/@genius.vending" target="_blank" rel="noopener noreferrer"
+                    class="footer__social" aria-label="TikTok"><svg viewBox="0 0 24 24" width="22" height="22"
+                        fill="currentColor">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.05a8.16 8.16 0 004.76 1.51V7.12a4.84 4.84 0 01-1-.43z" />
+                    </svg></a>
+                <a href="https://www.instagram.com/geniusvendingmx/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22"
+                        fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg></a>
+                <a href="https://www.facebook.com/profile.php?id=61575926420641" target="_blank"
+                    rel="noopener noreferrer" class="footer__social" aria-label="Facebook"><svg viewBox="0 0 24 24"
+                        width="22" height="22" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                    </svg></a>
+            </div>
+            <div class="footer__bottom">
+                <img src="https://static.wixstatic.com/media/c12a9c_6d84f1f31faa43c19051ae1dfa7e83e3~mv2.png/v1/fill/w_200,h_101,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PHOTO-2025-03-12-12-48-10-removebg-preview.png"
+                    alt="Genius Vending" class="footer__logo-img">
+                <p class="footer__copyright">© 2025 by Genius Vending.&nbsp;</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/522223278258" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                fill="white" />
+        </svg>
+    </a>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Servicios y máquinas expendedoras de Genius Vending. Catálogo completo de soluciones de vending para empresas.">
+  <meta name="description"
+    content="Servicios y máquinas expendedoras de Genius Vending. Catálogo completo de soluciones de vending para empresas.">
   <title>Servicios | Genius Vending</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟢</text></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟢</text></svg>">
 </head>
+
 <body>
 
   <!-- HEADER -->
@@ -18,24 +24,28 @@
     <div class="container">
       <nav class="nav">
         <a href="../index.html" class="nav__logo">
-          <div class="nav__logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="3"/>
-              <line x1="8" y1="8" x2="8" y2="16"/>
-              <line x1="12" y1="10" x2="12" y2="16"/>
-              <line x1="16" y1="6" x2="16" y2="16"/>
-            </svg>
-          </div>
-          Genius<span>Vending</span>
+          <img
+            src="https://static.wixstatic.com/media/c12a9c_6d84f1f31faa43c19051ae1dfa7e83e3~mv2.png/v1/fill/w_240,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PHOTO-2025-03-12-12-48-10-removebg-preview.png"
+            alt="Genius Vending Logo" class="nav__logo-img">
         </a>
-        <div class="nav__links">
+        <div class="nav__links" id="navLinks">
           <a href="../index.html" class="nav__link">Inicio</a>
+          <a href="apply.html" class="nav__link">¿Quiénes Somos?</a>
           <a href="items.html" class="nav__link active">Servicios</a>
-          <a href="team.html" class="nav__link">Equipo</a>
           <a href="apply.html" class="nav__link">Contacto</a>
-          <a href="apply.html" class="nav__cta">Solicitar Info</a>
+          <div class="nav__dropdown">
+            <button class="nav__link nav__dropdown-trigger">Catálogos <svg width="12" height="8" viewBox="0 0 16 11"
+                fill="none">
+                <path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L0 1.86193L8 10.5Z"
+                  fill="currentColor" />
+              </svg></button>
+            <div class="nav__dropdown-menu">
+              <a href="team.html" class="nav__dropdown-item">Catálogo de Maquinas</a>
+              <a href="snacks.html" class="nav__dropdown-item">Catálogo de Snacks</a>
+            </div>
+          </div>
         </div>
-        <button class="nav__toggle" aria-label="Menú">
+        <button class="nav__toggle" aria-label="Menú" id="navToggle">
           <span></span><span></span><span></span>
         </button>
       </nav>
@@ -69,20 +79,26 @@
         <div class="item-card fade-in">
           <div class="item-card__image">
             <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:220px;">
-              <rect width="400" height="220" fill="#0f2038"/>
-              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1"/>
+              <rect width="400" height="220" fill="#0f2038" />
+              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1" />
               <text x="200" y="90" text-anchor="middle" font-size="40">🥤</text>
-              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12" font-family="sans-serif">COMBO</text>
-              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">Bebidas y Snacks</text>
+              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12"
+                font-family="sans-serif">COMBO</text>
+              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10"
+                font-family="sans-serif">Bebidas y Snacks</text>
             </svg>
           </div>
           <div class="item-card__body">
             <span class="item-card__category">Máquina Combo</span>
             <h3 class="item-card__title">Expendedora de Bebidas y Snacks</h3>
-            <p class="item-card__description">Máquina combinada de alta capacidad para bebidas frías y snacks. Ideal para oficinas, fábricas y espacios corporativos.</p>
+            <p class="item-card__description">Máquina combinada de alta capacidad para bebidas frías y snacks. Ideal
+              para oficinas, fábricas y espacios corporativos.</p>
             <a href="apply.html" class="item-card__link">
               Solicitar cotización
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </div>
         </div>
@@ -91,20 +107,26 @@
         <div class="item-card fade-in">
           <div class="item-card__image">
             <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:220px;">
-              <rect width="400" height="220" fill="#0f2038"/>
-              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1"/>
+              <rect width="400" height="220" fill="#0f2038" />
+              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1" />
               <text x="200" y="90" text-anchor="middle" font-size="40">☕</text>
-              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12" font-family="sans-serif">CAFÉ</text>
-              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">Bebidas Calientes</text>
+              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12"
+                font-family="sans-serif">CAFÉ</text>
+              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10"
+                font-family="sans-serif">Bebidas Calientes</text>
             </svg>
           </div>
           <div class="item-card__body">
             <span class="item-card__category">Máquina de Café</span>
             <h3 class="item-card__title">Expendedora de Café Premium</h3>
-            <p class="item-card__description">Café de grano recién molido, cappuccino, latte y chocolate caliente. Tecnología italiana con la mejor calidad.</p>
+            <p class="item-card__description">Café de grano recién molido, cappuccino, latte y chocolate caliente.
+              Tecnología italiana con la mejor calidad.</p>
             <a href="apply.html" class="item-card__link">
               Solicitar cotización
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </div>
         </div>
@@ -113,20 +135,26 @@
         <div class="item-card fade-in">
           <div class="item-card__image">
             <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:220px;">
-              <rect width="400" height="220" fill="#0f2038"/>
-              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1"/>
+              <rect width="400" height="220" fill="#0f2038" />
+              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1" />
               <text x="200" y="90" text-anchor="middle" font-size="40">💧</text>
-              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12" font-family="sans-serif">AGUA</text>
-              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">Bebidas Frías</text>
+              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12"
+                font-family="sans-serif">AGUA</text>
+              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10"
+                font-family="sans-serif">Bebidas Frías</text>
             </svg>
           </div>
           <div class="item-card__body">
             <span class="item-card__category">Máquina de Bebidas</span>
             <h3 class="item-card__title">Expendedora de Bebidas Frías</h3>
-            <p class="item-card__description">Agua, refrescos, jugos y bebidas energéticas siempre frías. Sistema de refrigeración eficiente y silencioso.</p>
+            <p class="item-card__description">Agua, refrescos, jugos y bebidas energéticas siempre frías. Sistema de
+              refrigeración eficiente y silencioso.</p>
             <a href="apply.html" class="item-card__link">
               Solicitar cotización
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </div>
         </div>
@@ -135,20 +163,26 @@
         <div class="item-card fade-in">
           <div class="item-card__image">
             <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:220px;">
-              <rect width="400" height="220" fill="#0f2038"/>
-              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1"/>
+              <rect width="400" height="220" fill="#0f2038" />
+              <rect x="140" y="20" width="120" height="180" rx="8" fill="#1a2a4a" stroke="#00c853" stroke-width="1" />
               <text x="200" y="90" text-anchor="middle" font-size="40">🥗</text>
-              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12" font-family="sans-serif">SALUDABLE</text>
-              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">Alimentos Frescos</text>
+              <text x="200" y="125" text-anchor="middle" fill="#00c853" font-size="12"
+                font-family="sans-serif">SALUDABLE</text>
+              <text x="200" y="145" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10"
+                font-family="sans-serif">Alimentos Frescos</text>
             </svg>
           </div>
           <div class="item-card__body">
             <span class="item-card__category">Máquina Saludable</span>
             <h3 class="item-card__title">Expendedora de Alimentos Frescos</h3>
-            <p class="item-card__description">Ensaladas, frutas, sándwiches y opciones saludables frescas. Refrigeración controlada para alimentos perecederos.</p>
+            <p class="item-card__description">Ensaladas, frutas, sándwiches y opciones saludables frescas. Refrigeración
+              controlada para alimentos perecederos.</p>
             <a href="apply.html" class="item-card__link">
               Solicitar cotización
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </a>
           </div>
         </div>
@@ -170,26 +204,42 @@
       <div class="services__grid">
         <div class="service-card fade-in">
           <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
           </div>
           <h3 class="service-card__title">Telemetría</h3>
-          <p class="service-card__description">Monitoreo remoto en tiempo real de todas tus máquinas. Reportes de ventas, inventario y rendimiento desde cualquier dispositivo.</p>
+          <p class="service-card__description">Monitoreo remoto en tiempo real de todas tus máquinas. Reportes de
+            ventas, inventario y rendimiento desde cualquier dispositivo.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
           </div>
           <h3 class="service-card__title">Consultoría</h3>
-          <p class="service-card__description">Asesoría especializada para elegir las mejores soluciones de vending según tu tipo de negocio y ubicación.</p>
+          <p class="service-card__description">Asesoría especializada para elegir las mejores soluciones de vending
+            según tu tipo de negocio y ubicación.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
           </div>
           <h3 class="service-card__title">Garantía Extendida</h3>
-          <p class="service-card__description">Protección total para tus máquinas con cobertura extendida, refacciones originales y técnicos certificados.</p>
+          <p class="service-card__description">Protección total para tus máquinas con cobertura extendida, refacciones
+            originales y técnicos certificados.</p>
         </div>
       </div>
     </div>
@@ -199,7 +249,8 @@
   <section class="cta-banner">
     <div class="container">
       <h2 class="cta-banner__title fade-in">¿Interesado en nuestras soluciones?</h2>
-      <p class="cta-banner__subtitle fade-in">Solicita una cotización personalizada y descubre cómo podemos ayudar a tu empresa.</p>
+      <p class="cta-banner__subtitle fade-in">Solicita una cotización personalizada y descubre cómo podemos ayudar a tu
+        empresa.</p>
       <div class="cta-banner__buttons fade-in">
         <a href="apply.html" class="btn btn--primary">Solicitar Cotización</a>
         <a href="../index.html" class="btn btn--outline">Volver al Inicio</a>
@@ -210,48 +261,64 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
+      <div class="footer__motto">
+        <p class="footer__motto-text"><em>Donde otros ven un espacio vacío, nosotros <em>vemos una
+              oportunidad.</em></em>&nbsp;🚀</p>
+      </div>
       <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__brand-name">Genius<span>Vending</span></div>
-          <p class="footer__brand-desc">Empresa mexicana líder en operación de máquinas expendedoras desde 2009.</p>
-          <div class="footer__socials">
-            <a href="#" class="footer__social" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a href="#" class="footer__social" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a>
-            <a href="#" class="footer__social" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
-          </div>
-        </div>
-        <div>
-          <h4 class="footer__col-title">Navegación</h4>
+        <div></div>
+        <div class="footer__menu-col">
+          <h4 class="footer__col-title">MENU</h4>
           <a href="../index.html" class="footer__link">Inicio</a>
+          <a href="apply.html" class="footer__link">¿Quiénes Somos?</a>
           <a href="items.html" class="footer__link">Servicios</a>
-          <a href="team.html" class="footer__link">Equipo</a>
           <a href="apply.html" class="footer__link">Contacto</a>
+          <a href="team.html" class="footer__link">Catálogos</a>
         </div>
-        <div>
-          <h4 class="footer__col-title">Servicios</h4>
-          <a href="#" class="footer__link">Venta de Máquinas</a>
-          <a href="#" class="footer__link">Mantenimiento</a>
-          <a href="#" class="footer__link">Pagos Electrónicos</a>
-          <a href="#" class="footer__link">Personalización</a>
-        </div>
-        <div>
-          <h4 class="footer__col-title">Contacto</h4>
-          <a href="#" class="footer__link">Ciudad de México, MX</a>
-          <a href="mailto:info@geniusvending.mx" class="footer__link">info@geniusvending.mx</a>
-          <a href="tel:+525512345678" class="footer__link">+52 55 1234 5678</a>
+        <div class="footer__contact-col">
+          <h4 class="footer__col-title">CONTACT</h4>
+          <a href="mailto:contacto@genuisvendig.mx" class="footer__link">contacto@genuisvendig.mx</a>
+          <a href="tel:+522223278258" class="footer__link">2223 2782 58</a>
+          <p class="footer__link">Calle Valentina #5 col Momoxpan, San Pedro Cholula, Puebla.</p>
         </div>
       </div>
+      <div class="footer__social-row">
+        <a href="https://www.tiktok.com/@genius.vending" target="_blank" rel="noopener noreferrer"
+          class="footer__social" aria-label="TikTok"><svg viewBox="0 0 24 24" width="22" height="22"
+            fill="currentColor">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.05a8.16 8.16 0 004.76 1.51V7.12a4.84 4.84 0 01-1-.43z" />
+          </svg></a>
+        <a href="https://www.instagram.com/geniusvendingmx/" target="_blank" rel="noopener noreferrer"
+          class="footer__social" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22"
+            fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61575926420641" target="_blank" rel="noopener noreferrer"
+          class="footer__social" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22"
+            fill="currentColor">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg></a>
+      </div>
       <div class="footer__bottom">
-        <span>&copy; 2024 Genius Vending. Todos los derechos reservados.</span>
-        <span>Hecho con pasión en México</span>
+        <img
+          src="https://static.wixstatic.com/media/c12a9c_6d84f1f31faa43c19051ae1dfa7e83e3~mv2.png/v1/fill/w_200,h_101,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PHOTO-2025-03-12-12-48-10-removebg-preview.png"
+          alt="Genius Vending" class="footer__logo-img">
+        <p class="footer__copyright">© 2025 by Genius Vending.&nbsp;</p>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/525512345678" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="white"/></svg>
+  <a href="https://wa.me/522223278258" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        fill="white" />
+    </svg>
   </a>
 
   <script src="../js/main.js"></script>
 </body>
+
 </html>
