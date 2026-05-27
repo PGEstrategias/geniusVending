@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/emprendedores", "destination": "/pages/emprendedores.html" }
+  ]
+}
