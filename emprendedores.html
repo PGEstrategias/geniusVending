@@ -50,17 +50,28 @@
       background: #0a1228;
     }
 
-    .lp-hero__bg {
+    /* Full-bleed background video */
+    .lp-hero__bgvideo {
       position: absolute;
       inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       z-index: 0;
-      background:
-        radial-gradient(ellipse at 80% 22%, rgba(107, 142, 35, 0.32) 0%, transparent 55%),
-        radial-gradient(ellipse at 8% 85%, rgba(74, 103, 65, 0.3) 0%, transparent 55%),
-        linear-gradient(160deg, #0e1a33 0%, #0a1228 55%, #102219 100%);
     }
 
-    .lp-hero__bg::after {
+    /* Dark scrim over background video for text legibility + brand glow */
+    .lp-hero__scrim {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(ellipse at 80% 22%, rgba(107, 142, 35, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at 8% 85%, rgba(74, 103, 65, 0.26) 0%, transparent 55%),
+        linear-gradient(160deg, rgba(14, 26, 51, 0.84) 0%, rgba(10, 18, 40, 0.8) 55%, rgba(16, 34, 25, 0.86) 100%);
+    }
+
+    .lp-hero__scrim::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -68,7 +79,67 @@
       background-size: 26px 26px;
       -webkit-mask-image: radial-gradient(ellipse at center, #000 0%, transparent 75%);
       mask-image: radial-gradient(ellipse at center, #000 0%, transparent 75%);
-      opacity: 0.55;
+      opacity: 0.5;
+    }
+
+    /* Sound toggle button on the framed video */
+    .lp-hero__sound {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 4;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: rgba(6, 12, 26, 0.55);
+      backdrop-filter: blur(8px);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.25s, background 0.25s, border-color 0.25s;
+    }
+
+    .lp-hero__sound:hover {
+      transform: scale(1.08);
+      background: rgba(107, 142, 35, 0.85);
+      border-color: transparent;
+    }
+
+    .lp-hero__sound svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .lp-hero__sound .icon-on { display: none; }
+    .lp-hero__sound.is-on .icon-on { display: block; }
+    .lp-hero__sound.is-on .icon-off { display: none; }
+
+    /* "Toca para activar sonido" hint, hides once unmuted */
+    .lp-hero__sound-hint {
+      position: absolute;
+      top: 16px;
+      right: 70px;
+      z-index: 4;
+      padding: 8px 14px;
+      border-radius: 50px;
+      background: rgba(6, 12, 26, 0.6);
+      backdrop-filter: blur(8px);
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 0.76rem;
+      font-weight: 600;
+      white-space: nowrap;
+      animation: lp-hint 2.6s ease-in-out infinite;
+    }
+
+    .lp-hero__sound-hint.hidden { display: none; }
+
+    @keyframes lp-hint {
+      0%, 100% { transform: translateX(0); opacity: 0.9; }
+      50% { transform: translateX(4px); opacity: 1; }
     }
 
     .lp-hero__grid {
@@ -1113,7 +1184,14 @@
 
   <!-- ===== SPLIT VIDEO HERO ===== -->
   <section class="lp-hero">
-    <div class="lp-hero__bg"></div>
+    <!-- Background video (full-bleed, muted ambient) -->
+    <video class="lp-hero__bgvideo" autoplay muted loop playsinline preload="auto"
+      poster="https://static.wixstatic.com/media/11062b_9d305808a6154ec0b4764d9a121d8d7c~mv2.jpg/v1/fill/w_1920,h_1280,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9d305808a6154ec0b4764d9a121d8d7c~mv2.jpg">
+      <source
+        src="https://res.cloudinary.com/dxcr9utre/video/upload/v1780166826/WhatsApp_Video_2026-05-29_at_15.59.25_gn8vy8.mp4"
+        type="video/mp4">
+    </video>
+    <div class="lp-hero__scrim"></div>
 
     <div class="container lp-hero__grid">
       <div class="lp-hero__content">
@@ -1149,12 +1227,22 @@
 
       <div class="lp-hero__media reveal" data-d="2">
         <div class="lp-hero__frame">
-          <video autoplay muted loop playsinline preload="auto"
+          <video id="heroVideo" autoplay muted loop playsinline preload="auto"
             poster="https://static.wixstatic.com/media/11062b_9d305808a6154ec0b4764d9a121d8d7c~mv2.jpg/v1/fill/w_1080,h_1080,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_9d305808a6154ec0b4764d9a121d8d7c~mv2.jpg">
             <source
               src="https://res.cloudinary.com/djduba5fd/video/upload/q_auto/f_auto/v1780165280/WhatsApp_Video_2026-05-29_at_4.03.06_PM_aankbg.mp4"
               type="video/mp4">
           </video>
+          <span class="lp-hero__sound-hint" id="soundHint">🔊 Toca para activar sonido</span>
+          <button class="lp-hero__sound" id="soundToggle" type="button" aria-label="Activar sonido">
+            <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 00-2.5-4.03v8.05A4.5 4.5 0 0016.5 12zM19 12a7 7 0 01-1.9 4.8l-1.4-1.4A5 5 0 0017 12a5 5 0 00-1.3-3.4l1.4-1.4A7 7 0 0119 12z" />
+              <path d="M3 3l18 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" />
+            </svg>
+            <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 00-2.5-4.03v8.05A4.5 4.5 0 0016.5 12zM14 3.23v2.06a7 7 0 010 13.42v2.06a9 9 0 000-17.54z" />
+            </svg>
+          </button>
         </div>
         <span class="lp-hero__media-badge"><span class="live"></span> Instalación real en Puebla</span>
       </div>
@@ -1573,13 +1661,29 @@
       });
     });
 
-    // ===== VIDEO: ensure autoplay (some browsers need a nudge) =====
-    const heroVideo = document.querySelector('.lp-hero__frame video');
-    if (heroVideo) {
-      const tryPlay = () => heroVideo.play().catch(() => {});
-      heroVideo.addEventListener('canplay', tryPlay, { once: true });
-      document.addEventListener('visibilitychange', () => {
-        if (!document.hidden) tryPlay();
+    // ===== VIDEOS: ensure autoplay (some browsers need a nudge) =====
+    const heroVideo = document.getElementById('heroVideo');
+    const bgVideo = document.querySelector('.lp-hero__bgvideo');
+    [heroVideo, bgVideo].forEach(v => {
+      if (!v) return;
+      const tryPlay = () => v.play().catch(() => {});
+      v.addEventListener('canplay', tryPlay, { once: true });
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
+    });
+
+    // ===== SOUND TOGGLE for the framed hero video =====
+    const soundBtn = document.getElementById('soundToggle');
+    const soundHint = document.getElementById('soundHint');
+    if (soundBtn && heroVideo) {
+      soundBtn.addEventListener('click', () => {
+        heroVideo.muted = !heroVideo.muted;
+        if (!heroVideo.muted) {
+          heroVideo.volume = 1;
+          heroVideo.play().catch(() => {});
+        }
+        soundBtn.classList.toggle('is-on', !heroVideo.muted);
+        soundBtn.setAttribute('aria-label', heroVideo.muted ? 'Activar sonido' : 'Silenciar');
+        if (soundHint) soundHint.classList.add('hidden');
       });
     }
   </script>
