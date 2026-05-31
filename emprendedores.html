@@ -170,7 +170,9 @@
     .lp-hero__frame {
       position: relative;
       width: 100%;
-      max-width: 380px;
+      max-width: 340px;
+      aspect-ratio: 9 / 16;
+      max-height: 74vh;
       border-radius: 26px;
       overflow: hidden;
       background: #060c1a;
@@ -194,9 +196,8 @@
     .lp-hero__frame video {
       display: block;
       width: 100%;
-      height: auto;
-      max-height: 78vh;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
       background: #060c1a;
     }
 
@@ -1136,8 +1137,7 @@
       .lp-hero__content { max-width: 100%; }
       .lp-hero__actions { justify-content: center; }
       .lp-trust { justify-content: center; }
-      .lp-hero__frame { max-width: 320px; }
-      .lp-hero__frame video { max-height: 62vh; }
+      .lp-hero__frame { max-width: 300px; max-height: 64vh; }
       .lp-stats__grid { grid-template-columns: repeat(2, 1fr); }
       .lp-features { grid-template-columns: repeat(2, 1fr); }
       .lp-card--wide { grid-column: span 2; }
