@@ -60,15 +60,16 @@
       z-index: 0;
     }
 
-    /* Dark scrim over background video for text legibility + brand glow */
+    /* Dark scrim over background video for text legibility + brand glow.
+       Lighter on the right so the background video is clearly visible. */
     .lp-hero__scrim {
       position: absolute;
       inset: 0;
       z-index: 1;
       background:
-        radial-gradient(ellipse at 80% 22%, rgba(107, 142, 35, 0.28) 0%, transparent 55%),
-        radial-gradient(ellipse at 8% 85%, rgba(74, 103, 65, 0.26) 0%, transparent 55%),
-        linear-gradient(160deg, rgba(14, 26, 51, 0.84) 0%, rgba(10, 18, 40, 0.8) 55%, rgba(16, 34, 25, 0.86) 100%);
+        linear-gradient(90deg, rgba(8, 14, 30, 0.86) 0%, rgba(8, 14, 30, 0.6) 34%, rgba(8, 14, 30, 0.25) 58%, rgba(8, 14, 30, 0.08) 100%),
+        radial-gradient(ellipse at 82% 24%, rgba(107, 142, 35, 0.16) 0%, transparent 55%),
+        linear-gradient(180deg, rgba(10, 18, 40, 0.12) 0%, rgba(10, 18, 40, 0.32) 100%);
     }
 
     .lp-hero__scrim::after {
@@ -1131,6 +1132,7 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 980px) {
       .lp-hero__grid { grid-template-columns: 1fr; gap: 36px; padding-top: 116px; padding-bottom: 64px; text-align: center; }
+      .lp-hero__scrim { background: linear-gradient(180deg, rgba(8, 14, 30, 0.82) 0%, rgba(8, 14, 30, 0.6) 50%, rgba(8, 14, 30, 0.78) 100%); }
       .lp-hero__content { max-width: 100%; }
       .lp-hero__actions { justify-content: center; }
       .lp-trust { justify-content: center; }
